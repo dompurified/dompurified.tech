@@ -41,8 +41,8 @@
       .i {
         text-align: center;
       }
-      i + i {
-        margin-left: 16px;
+      a + i, i + a {
+        margin-left: 2vw;
       }
       i {
         color: white;
@@ -68,20 +68,20 @@
       document.addEventListener("DOMContentLoaded", () => particlesJS('p', {
         particles: {
           number: {
-            value: 10,
+            value: 100,
             density: {
               enable: true,
               value_area: 800
             }
           },
           color: {
-            value: "#ffffff"
+            value: "#aaaaaa"
           },
           shape: {
             type: "circle",
             stroke: {
               width: 0,
-              color: "#ffffff"
+              color: "#aaaaaa"
             }
           },
           opacity: {
@@ -107,7 +107,7 @@
           line_linked: {
             enable: true,
             distance: 300,
-            color: "#ffffff",
+            color: "#aaaaaa",
             opacity: 0.4,
             width: 2
           },
