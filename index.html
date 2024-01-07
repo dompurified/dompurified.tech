@@ -47,7 +47,7 @@
       }
       #title, i {
         opacity: 0;
-        animation: ta var(--s) linear calc(var(--n) * 100ms) forwards;
+        animation: ta var(--s) cubic-bezier(0,.75,.44,.9) calc(var(--n) * 100ms) forwards;
       }
       @keyframes ta {
         0% {
@@ -56,11 +56,9 @@
         }
         30% {
           transform: translateY(0%);
-        }
-
-        50% {
           opacity: 0.7;
         }
+
           100% {
           opacity: 1;
           }
